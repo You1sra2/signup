@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <style>
+      *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #5e63ff, #a14efe);
+}
+main{
+    background-color: white;
+    width: 90%;
+    margin: 0px auto;
+    height: 83vh;
+    margin-top: 10vh;
+    box-shadow: 0px 0px 14px 14px #0000009c;
+    border-radius: 30px;
+}
+#leftSide{
+    background-image: linear-gradient(to left, #5e63ff, #a14efe);
+    width: 30%;
+    float: left;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 0px;
+}
+
+#rightSide{
+    background-color: transparent;
+    width: 70%;
+    float: right;
+    height: 100%;
+    color: gray;
+}
+
+#leftSide > p{
+    text-align: justify;
+    font-size: small;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#leftSide > a{
+  text-decoration: none;
+  color: white;
+  border: 1px solid blueviolet;
+  padding: 10px;
+  border-radius: 20px;
+}
+#rightSide > h1{
+  text-align: center;
+  margin-top: 10px;
+}
+#rightSide > form{
+  text-align: center;
+}
+fieldset{
+    height:70%;
+    white:70%;
+}
+form > fieldset{
+  width: 70%;
+  box-shadow:  0px 0px 3px 3px lightgray;
+  position: relative;
+  left: 13%;
+  margin-top: 50px;
+  padding: 50px;
+  border: transparent;
+  border-radius: 3px;
+  line-height: 0px;
+}
+fieldset > input{
+  border-bottom: 2px solid blueviolet;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  margin-bottom: 50px;
+  width: 350px;
+  outline: none;
+  
+}
+#checkbox{
+  width: 1em;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 15px;
+}
+form > a{
+  text-decoration: none;
+  color: darkblue;
+  padding: 10px;
+  border: 2px solid royalblue;
+  line-height: 90px;
+}
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="leftSide">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum magni deserunt minima perspiciatis alias a cupiditate dignissimos voluptas nesciunt. Qui ea porro veritatis tempore illum in optio enim repellendus. Blanditiis?</p>
+        <a href="#">Learn More</a>
+      </div><!--
+      --><div id="rightSide">
+        <h1>SIGN UP</h1>
+        <form action="traitement.php" method="GET">
+          <fieldset>
+            
+            <input type="text" name="first name" placeholder="First name" required>
+            <br>
+            <input type="text" name="last name" placeholder="Last name" size="3">
+            <br>
+            <input type="email" name="email" placeholder="Email" required>
+            <br>
+            <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <input type="checkbox" name="accept" id="checkbox"> I accept Teams & conditions 
+          </fieldset>
+          <a href="signin.html">SIGN UP</a>
+          <p>You have account ?</p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
